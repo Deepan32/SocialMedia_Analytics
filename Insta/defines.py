@@ -11,12 +11,12 @@ def getCreds():
 
 	"""
     creds = dict()
-    creds['access_token'] = 'EAAEedthbkBUBOZBfya3SGnt6De4wd6f3bSLfRpZBuxzqgITZBtNRZApvf3Vpx4xZAVcVVCFFdPzJeGpTZARIIbupFyH3vZAHZCjz0DMuR07aJcMGrOZAJ13sjL63OXMoxv6Kwjp0oo86mX9TNYZClWgzVlOrDfzfsECfX5CSrJ1lBQDNc4Cfd6fWFqT9ZCQWDZCojij45WSEoR5sVWcJRD36kI4H4ZBLDVICr8ZCApapdh9r4NBF7IB2yGqaFXheOPWti5gsAZD'
+    creds['access_token'] = 'EAAEedthbkBUBO8A4bVVcZBFLUXfCy5RUn7sOSC4aaMZCb71JGXy4OrWSOjLZB3HVSZArZCfZA5tWExAJhkZArNrsfqrDZBA02JxYn8HubKyuFnfijcwUk8jnlhnrrQ2nAtMGtc8W5rTm22GTbWNzXeMpQ2GmZB9XIfaOR5HDLLYNTYZC6UawZC3nITX4vIm'
     creds['client_id'] = '314970761564181'
     creds['client_secret'] = 'a92327ba81ad881701c92a6ec2724ae1'
     creds['graph_domain']='https://graph.facebook.com'
     creds['graph_version']='v19.0'
-    creds['endpoint_base']=creds['graph_domain']+creds['graph_version']+'/'
+    creds['endpoint_base']=creds['graph_domain']+'/'+creds['graph_version']+'/'
     creds['debug'] = 'no' # debug mode for api call
     return(creds)
 
