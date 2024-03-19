@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import numpy as np
 import requests
+import pandas as pd
 
 def getCreds():
     """ Get creds required for use in the applications
@@ -11,9 +12,9 @@ def getCreds():
 
 	"""
     creds = dict()
-    creds['access_token'] = 'EAAEedthbkBUBO8A4bVVcZBFLUXfCy5RUn7sOSC4aaMZCb71JGXy4OrWSOjLZB3HVSZArZCfZA5tWExAJhkZArNrsfqrDZBA02JxYn8HubKyuFnfijcwUk8jnlhnrrQ2nAtMGtc8W5rTm22GTbWNzXeMpQ2GmZB9XIfaOR5HDLLYNTYZC6UawZC3nITX4vIm'
-    creds['client_id'] = '314970761564181'
-    creds['client_secret'] = 'a92327ba81ad881701c92a6ec2724ae1'
+    creds['access_token'] = 'EAANBJ3EUqtQBO74DNjQnvTOSv1V2kzTPWlAeEqoGKjZCoKQ9IJUVOY217nZBwmKksuTatrxqONNUoSJo0KmbCqgf66aXGRZAr53iapOKZCmiXfflYcNYTdiDWZA5o6TBFibvWSZBtZChIlRODAs5CZAVX855CCOFGEdynsLTWTAxuPmjy8ZCE5dHoPKwfMzDSpRYS'
+    creds['client_id'] = '916062586841812'
+    creds['client_secret'] = 'ce7003dc0d99a045622305109ea34e6e'
     creds['graph_domain']='https://graph.facebook.com'
     creds['graph_version']='v19.0'
     creds['endpoint_base']=creds['graph_domain']+'/'+creds['graph_version']+'/'
