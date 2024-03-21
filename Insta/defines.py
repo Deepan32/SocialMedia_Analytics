@@ -12,13 +12,14 @@ def getCreds():
 
 	"""
     creds = dict()
-    creds['access_token'] = 'EAANBJ3EUqtQBO74DNjQnvTOSv1V2kzTPWlAeEqoGKjZCoKQ9IJUVOY217nZBwmKksuTatrxqONNUoSJo0KmbCqgf66aXGRZAr53iapOKZCmiXfflYcNYTdiDWZA5o6TBFibvWSZBtZChIlRODAs5CZAVX855CCOFGEdynsLTWTAxuPmjy8ZCE5dHoPKwfMzDSpRYS'
+    creds['access_token'] = 'EAANBJ3EUqtQBOZBvMIfhmQY6ZCZBm84sLfuMG1SsHdDZCsB4keo8RXbR7i024WPfJ1fVdM6u4AQzOPaGjZBIDn1JZC5ZClMsuZCvoEHxBQEqLmWZCbsSFZAOnU3LpuZBsjGjyy0IQSaniCfKOluP782ptVZCapbuDOfFjDnmDyNcKfMn5f8BjlwK64fu4oR4IatxbMul'
     creds['client_id'] = '916062586841812'
     creds['client_secret'] = 'ce7003dc0d99a045622305109ea34e6e'
     creds['graph_domain']='https://graph.facebook.com'
     creds['graph_version']='v19.0'
     creds['endpoint_base']=creds['graph_domain']+'/'+creds['graph_version']+'/'
     creds['debug'] = 'no' # debug mode for api call
+    creds['page_id'] ='122116774574229875'
     return(creds)
 
 def displayApiCallData( response ) :
@@ -34,9 +35,7 @@ def displayApiCallData( response ) :
 
 def makeApiCall(url, endpointPrams, debug = 'no'):
     data = requests.get( url, endpointPrams)
-
     response = dict()
-
     response['url']=url
     response['endpoint_params'] = endpointPrams
     response['endpoint_params_pretty'] = json.dumps(endpointPrams, indent = 4)
