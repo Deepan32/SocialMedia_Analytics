@@ -24,14 +24,12 @@ response=getUserPages(params)
 url=params["endpoint_base"]+"122116774574229875"
 
 ACCESS_TOKEN="EAANBJ3EUqtQBOZBvMIfhmQY6ZCZBm84sLfuMG1SsHdDZCsB4keo8RXbR7i024WPfJ1fVdM6u4AQzOPaGjZBIDn1JZC5ZClMsuZCvoEHxBQEqLmWZCbsSFZAOnU3LpuZBsjGjyy0IQSaniCfKOluP782ptVZCapbuDOfFjDnmDyNcKfMn5f8BjlwK64fu4oR4IatxbMul"
-url = f'https://graph.facebook.com/me?access_token={ACCESS_TOKEN}'
+url = f'https://graph.facebook.com/122116774574229875?access_token={ACCESS_TOKEN}'
 response = requests.get(url)
 
 response.status_code
 # Assuming the first page is the one you're interested in
 id=response.json()['id']
-
-
 
 
 # Things to solve:
